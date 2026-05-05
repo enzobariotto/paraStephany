@@ -6,14 +6,15 @@ import BookDetail from '../views/BookDetail.vue'
 const routes = [
   {
     path: '/',
-    component: BookListView
+    component: BookListView   // tela principal com lista e busca
   },
   {
-    path: '/livro/:key',
+    path: '/livro/:key',      // :key é o identificador do livro na Open Library
     component: BookDetail
   }
 ]
 
+// createWebHashHistory usa # na URL (ex: /#/livro/...), dispensando configuração no servidor
 const router = createRouter({
   history: createWebHashHistory(),
   routes

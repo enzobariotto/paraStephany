@@ -4,6 +4,7 @@
 
 import { getCoverUrl } from '../services/bookService.js'
 
+// Recebe a lista de livros do componente pai
 defineProps({
   books: {
     type: Array,
@@ -11,6 +12,7 @@ defineProps({
   }
 })
 
+// Emite 'select' com o livro clicado para que o pai decida a navegação
 const emit = defineEmits(['select'])
 </script>
 

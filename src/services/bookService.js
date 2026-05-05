@@ -16,6 +16,7 @@ export async function searchBooks(query, page = 1) {
 
   return {
     books: data.docs || [],
+    // Limita a 200 resultados para evitar paginação excessiva com a API pública
     totalPages: Math.ceil(Math.min(data.numFound, 200) / PER_PAGE)
   }
 }
@@ -39,6 +40,7 @@ export async function getBook(key) {
   return {
     title: data.title,
     authors,
+    // A API retorna description como string simples ou como objeto { value: '...' }
     desc:
       typeof data.description === 'string'
         ? data.description

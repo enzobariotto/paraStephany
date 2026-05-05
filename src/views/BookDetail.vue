@@ -13,6 +13,7 @@ const book    = ref(null)
 const loading = ref(true)
 const error   = ref(null)
  
+// Busca os detalhes do livro usando a chave extraída da URL (:key)
 onMounted(async () => {
   try {
     book.value = await getBook(route.params.key)

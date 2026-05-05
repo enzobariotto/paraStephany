@@ -5,8 +5,9 @@ import { ref } from 'vue'
 import { searchBooks } from '../services/bookService.js'
 
 export function useBooks() {
+  // Estado reativo compartilhado entre os componentes que usarem este composable
   const books   = ref([])
-  const query   = ref('romance')
+  const query   = ref('romance')  // busca inicial ao abrir o app
   const page    = ref(1)
   const total   = ref(1)
   const loading = ref(false)
@@ -27,9 +28,9 @@ export function useBooks() {
   }
 
   const search = (input) => {
-    if (!input.trim()) return
+    if (!input.trim()) return  // ignora busca vazia
     query.value = input
-    page.value  = 1
+    page.value  = 1            // volta para a primeira página a cada nova busca
     fetchBooks()
   }
 

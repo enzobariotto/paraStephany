@@ -12,10 +12,12 @@ const input  = ref('')
 
 const { books, page, total, loading, error, fetchBooks, search, prevPage, nextPage } = useBooks()
 
+// Remove o prefixo '/works/' que a API inclui na chave, pois já está no path da rota
 const goToDetail = (book) => {
   router.push('/livro/' + book.key.replace('/works/', ''))
 }
 
+// Carrega os livros automaticamente assim que a view é exibida
 onMounted(fetchBooks)
 </script>
 
