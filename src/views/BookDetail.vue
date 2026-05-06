@@ -1,5 +1,5 @@
 <script setup>
-// 📄 BookDetail.vue → api-vue/src/views/BookDetail.vue
+// BookDetail.vue → api-vue/src/views/BookDetail.vue
 // View de detalhes de um livro.
  
 import { ref, onMounted } from 'vue'

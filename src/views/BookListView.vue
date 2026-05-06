@@ -1,5 +1,5 @@
 <script setup>
-// 📄 BookListView.vue → api-vue/src/views/BookListView.vue
+//  BookListView.vue → api-vue/src/views/BookListView.vue
 // View da tela inicial: usa o composable e o componente BookList.
 
 import { ref, onMounted } from 'vue'
@@ -23,7 +23,7 @@ onMounted(fetchBooks)
 
 <template>
   <div class="container">
-    <h1>📚 Biblioteca</h1>
+    <h1>Biblioteca</h1>
 
     <div class="search-bar">
       <input

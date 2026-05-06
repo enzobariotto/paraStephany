@@ -1,5 +1,5 @@
 <script setup>
-// 📄 BookList.vue → api-vue/src/components/BookList.vue
+//  BookList.vue → api-vue/src/components/BookList.vue
 // Componente reutilizável: renderiza a lista de livros.
 
 import { getCoverUrl } from '../services/bookService.js'

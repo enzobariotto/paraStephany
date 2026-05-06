@@ -1,4 +1,4 @@
-// 📄 router.js → api-vue/src/router/router.js
+//  router.js → api-vue/src/router/router.js
 import { createRouter, createWebHashHistory } from 'vue-router'
 import BookListView from '../views/BookListView.vue'
 import BookDetail from '../views/BookDetail.vue'

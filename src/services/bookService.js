@@ -1,4 +1,4 @@
-// 📄 bookService.js → api-vue/src/services/bookService.js
+//  bookService.js → api-vue/src/services/bookService.js
 // Centraliza todas as chamadas à Open Library API.
 
 const BASE = 'https://openlibrary.org'
@@ -21,7 +21,7 @@ export async function searchBooks(query, page = 1) {
   }
 }
 
-// ── Detalhes de um livro ──────────────────────────────────────
+// ── Detalhes de um livro ───────────────────
 export async function getBook(key) {
   const res = await fetch(`${BASE}/works/${key}.json`)
   const data = await res.json()

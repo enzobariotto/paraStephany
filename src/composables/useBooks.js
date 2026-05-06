@@ -1,4 +1,4 @@
-// 📄 useBooks.js → api-vue/src/composables/useBooks.js
+// useBooks.js → api-vue/src/composables/useBooks.js
 // Composable que encapsula estado e ações da listagem de livros.
 
 import { ref } from 'vue'
